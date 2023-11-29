@@ -1,0 +1,717 @@
+{
+	"info": {
+		"_postman_id": "7800085b-7a77-4a21-ae57-b84f54c446bd",
+		"name": "GP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "31109020"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t \"firstName\": \"user2\",\r\n        \"lastName\":\"user2\",\r\n        \"email\":\"a@gmail.com\",\r\n        \"password\": \"Password1230!\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{GP}}/auth/register"
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userId\": \"2505367872\", //admin\r\n\t// \"userId\": \"2336301150\",// instructor \r\n    // \"userId\": \"4215417960\",\r\n    // \"userId\": \"2856475638\",\r\n\t\"password\": \"Password1230!\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{GP}}/auth/login"
+					},
+					"response": []
+				},
+				{
+					"name": "Logout",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{GP}}/auth/logout"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Get All Users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{GP}}/users/get-all"
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Users Copy",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{GP}}/users/get-all"
+					},
+					"response": []
+				},
+				{
+					"name": "Get One User",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{GP}}/users/get-one/654805a44eb044267862e815"
+					},
+					"response": []
+				},
+				{
+					"name": "Create By Admin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\t{\r\n\t\t\"lastName\": \"Doe\",\r\n\t\t\"firstName\": \"John\",\r\n\t\t\"accountStatus\": \"Active\",\r\n\t\t\"role\": \"Instructor\",\r\n\t\t\"mobileNumber\": 132234568890,\r\n\t\t\"userId\": \"1234567880\",\r\n\t\t\"password\": \"Passw0rd!\",\r\n        \"score\":\"10\"\r\n\t}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{GP}}/users/create-by-admin"
+					},
+					"response": []
+				},
+				{
+					"name": "Update By Admin",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\t{\r\n\t\t\"lastName\": \"Doe22\",\r\n\t\t\"firstName\": \"John22\",\r\n\t\t\"accountStatus\": \"Active\",\r\n\t\t\"role\": \"Instructor\",\r\n\t\t\"mobileNumber\": 132234568890,\r\n\t\t\"userId\": \"1234567880\",\r\n\t\t\"password\": \"Passw0rd!\",\r\n        \"score\":\"10\"\r\n\t}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{GP}}/users/update-by-admin/654812ee6c1dcd59f65ec6f7"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Profile",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "firstName",
+									"value": "Taha",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "lastName",
+									"value": "Hamdy",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/E:/Gericht-MultiPages/src/assets/award03.png"
+								},
+								{
+									"key": "city",
+									"value": "alex",
+									"type": "text"
+								},
+								{
+									"key": "mobileNumber",
+									"value": "132234568891",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{GP}}/users/update-profile/6547fc89c5abdc4807128bf8"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Profile",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "firstName",
+									"value": "Taha",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "lastName",
+									"value": "Hamdy",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/E:/Gericht-MultiPages/src/assets/award01.png"
+								},
+								{
+									"key": "city",
+									"value": "alex",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{GP}}/users/delete-user/6547fc89c5abdc4807128bf8"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "articles",
+			"item": [
+				{
+					"name": "Get All articles",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{GP}}/article/"
+					},
+					"response": []
+				},
+				{
+					"name": "Get One article",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{GP}}/article/654805a44eb044267862e815"
+					},
+					"response": []
+				},
+				{
+					"name": "Create By Admin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "Doe 6",
+									"type": "text"
+								},
+								{
+									"key": "content",
+									"value": "John",
+									"type": "text"
+								},
+								{
+									"key": "cover",
+									"type": "file",
+									"src": []
+								},
+								{
+									"key": "isPublished",
+									"value": "false",
+									"type": "text"
+								},
+								{
+									"key": "publish_date",
+									"value": "2023-12-12T19:27:23.185Z",
+									"type": "text"
+								},
+								{
+									"key": "category",
+									"value": "business",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{GP}}/article/"
+					},
+					"response": []
+				},
+				{
+					"name": "update By Admin",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "Doe 6",
+									"type": "text"
+								},
+								{
+									"key": "content",
+									"value": "John",
+									"type": "text"
+								},
+								{
+									"key": "cover",
+									"type": "file",
+									"src": "/C:/Users/MUSTAFA/Downloads/default_user-95.png"
+								},
+								{
+									"key": "isPublished",
+									"value": "false",
+									"type": "text"
+								},
+								{
+									"key": "publish_date",
+									"value": "2023-12-12T19:27:23.185Z",
+									"type": "text"
+								},
+								{
+									"key": "category",
+									"value": "business",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{GP}}/article/"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete article",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "firstName",
+									"value": "Taha",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "lastName",
+									"value": "Hamdy",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/E:/Gericht-MultiPages/src/assets/award01.png"
+								},
+								{
+									"key": "city",
+									"value": "alex",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{GP}}/article/6555221fefa0d88c0a61cafe"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "videos",
+			"item": [
+				{
+					"name": "Get All videos",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{GP}}/videos/"
+					},
+					"response": []
+				},
+				{
+					"name": "Get One video",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{GP}}/videos/654805a44eb044267862e815"
+					},
+					"response": []
+				},
+				{
+					"name": "Create By Admin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "Doe 6",
+									"type": "text"
+								},
+								{
+									"key": "content",
+									"value": "John",
+									"type": "text"
+								},
+								{
+									"key": "cover",
+									"type": "file",
+									"src": []
+								},
+								{
+									"key": "isPublished",
+									"value": "false",
+									"type": "text"
+								},
+								{
+									"key": "publish_date",
+									"value": "2023-12-12T19:27:23.185Z",
+									"type": "text"
+								},
+								{
+									"key": "category",
+									"value": "business",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{GP}}/videos/"
+					},
+					"response": []
+				},
+				{
+					"name": "update By Admin",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "Doe 6",
+									"type": "text"
+								},
+								{
+									"key": "content",
+									"value": "John",
+									"type": "text"
+								},
+								{
+									"key": "cover",
+									"type": "file",
+									"src": "/C:/Users/MUSTAFA/Downloads/default_user-95.png"
+								},
+								{
+									"key": "isPublished",
+									"value": "false",
+									"type": "text"
+								},
+								{
+									"key": "publish_date",
+									"value": "2023-12-12T19:27:23.185Z",
+									"type": "text"
+								},
+								{
+									"key": "category",
+									"value": "business",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{GP}}/videos/"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete video",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "firstName",
+									"value": "Taha",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "lastName",
+									"value": "Hamdy",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/E:/Gericht-MultiPages/src/assets/award01.png"
+								},
+								{
+									"key": "city",
+									"value": "alex",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{GP}}/videos/6555221fefa0d88c0a61cafe"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Sounds",
+			"item": [
+				{
+					"name": "Get All sounds",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{GP}}/videos/"
+					},
+					"response": []
+				},
+				{
+					"name": "Get One sound",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{GP}}/videos/654805a44eb044267862e815"
+					},
+					"response": []
+				},
+				{
+					"name": "Create By Admin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "Doe 6",
+									"type": "text"
+								},
+								{
+									"key": "content",
+									"value": "John",
+									"type": "text"
+								},
+								{
+									"key": "cover",
+									"type": "file",
+									"src": []
+								},
+								{
+									"key": "isPublished",
+									"value": "false",
+									"type": "text"
+								},
+								{
+									"key": "publish_date",
+									"value": "2023-12-12T19:27:23.185Z",
+									"type": "text"
+								},
+								{
+									"key": "category",
+									"value": "business",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{GP}}/videos/"
+					},
+					"response": []
+				},
+				{
+					"name": "update By Admin",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "Doe 6",
+									"type": "text"
+								},
+								{
+									"key": "content",
+									"value": "John",
+									"type": "text"
+								},
+								{
+									"key": "cover",
+									"type": "file",
+									"src": "/C:/Users/MUSTAFA/Downloads/default_user-95.png"
+								},
+								{
+									"key": "isPublished",
+									"value": "false",
+									"type": "text"
+								},
+								{
+									"key": "publish_date",
+									"value": "2023-12-12T19:27:23.185Z",
+									"type": "text"
+								},
+								{
+									"key": "category",
+									"value": "business",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{GP}}/sounds/"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete video",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "firstName",
+									"value": "Taha",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "lastName",
+									"value": "Hamdy",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/E:/Gericht-MultiPages/src/assets/award01.png"
+								},
+								{
+									"key": "city",
+									"value": "alex",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{GP}}/sound/6555221fefa0d88c0a61cafe"
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "GP",
+			"value": "http://localhost:4000/GP/v1.0"
+		}
+	]
+}

@@ -1,0 +1,27 @@
+[2023-11-23 01:17:08.322 AM] ValidationError: User validation failed: gender: Path `gender` is required.
+    at Document.invalidate (C:\Users\Ebn_Daif\Desktop\GP\sef-training-Backend-full\node_modules\mongoose\lib\document.js:3174:32)
+    at C:\Users\Ebn_Daif\Desktop\GP\sef-training-Backend-full\node_modules\mongoose\lib\document.js:2967:17
+    at C:\Users\Ebn_Daif\Desktop\GP\sef-training-Backend-full\node_modules\mongoose\lib\schemaType.js:1367:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+[2023-11-23 01:35:01.815 AM] ReferenceError: dublicatedemail is not defined
+    at C:\Users\Ebn_Daif\Desktop\GP\sef-training-Backend-full\src\controllers\authController.js:8:21
+    at asyncUtilWrap (C:\Users\Ebn_Daif\Desktop\GP\sef-training-Backend-full\node_modules\express-async-handler\index.js:3:20)
+    at Layer.handle [as handle_request] (C:\Users\Ebn_Daif\Desktop\GP\sef-training-Backend-full\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Ebn_Daif\Desktop\GP\sef-training-Backend-full\node_modules\express\lib\router\route.js:144:13)
+    at C:\Users\Ebn_Daif\Desktop\GP\sef-training-Backend-full\src\middlewares\validationMiddleware.js:11:7
+    at Layer.handle [as handle_request] (C:\Users\Ebn_Daif\Desktop\GP\sef-training-Backend-full\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Ebn_Daif\Desktop\GP\sef-training-Backend-full\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\Ebn_Daif\Desktop\GP\sef-training-Backend-full\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\Ebn_Daif\Desktop\GP\sef-training-Backend-full\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Ebn_Daif\Desktop\GP\sef-training-Backend-full\node_modules\express\lib\router\index.js:284:15
+[2023-11-23 01:36:27.186 AM] ReferenceError: data is not defined
+    at C:\Users\Ebn_Daif\Desktop\GP\sef-training-Backend-full\src\controllers\authController.js:9:39
+    at asyncUtilWrap (C:\Users\Ebn_Daif\Desktop\GP\sef-training-Backend-full\node_modules\express-async-handler\index.js:3:20)
+    at Layer.handle [as handle_request] (C:\Users\Ebn_Daif\Desktop\GP\sef-training-Backend-full\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Ebn_Daif\Desktop\GP\sef-training-Backend-full\node_modules\express\lib\router\route.js:144:13)
+    at C:\Users\Ebn_Daif\Desktop\GP\sef-training-Backend-full\src\middlewares\validationMiddleware.js:11:7
+    at Layer.handle [as handle_request] (C:\Users\Ebn_Daif\Desktop\GP\sef-training-Backend-full\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Ebn_Daif\Desktop\GP\sef-training-Backend-full\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\Ebn_Daif\Desktop\GP\sef-training-Backend-full\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\Ebn_Daif\Desktop\GP\sef-training-Backend-full\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Ebn_Daif\Desktop\GP\sef-training-Backend-full\node_modules\express\lib\router\index.js:284:15
