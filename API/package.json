@@ -1,18 +1,19 @@
 {
-  "name": "seff-academy",
+  "name": "nafsi_api",
   "version": "1.0.0",
-  "description": "seff academy project",
+  "description": "gp project",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon src/server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "seff",
-    "academy",
+    "nafsi",
+    "GP",
+    "ELshorouk",
     "api"
   ],
-  "author": "Taha Hamdy",
+  "author": "Abdelrahman Deif",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.1.1",
@@ -31,6 +32,6 @@
     "winston": "^3.11.0"
   },
   "devDependencies": {
-    "nodemon": "^3.0.1"
+    "nodemon": "^3.0.2"
   }
 }
