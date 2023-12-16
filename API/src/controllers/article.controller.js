@@ -54,6 +54,7 @@ const articleController = {
 
 		const newArticle = new Article({
 			...req.body,
+			publish_by:req.user._id,
 			isPublished: status,
 		});
 

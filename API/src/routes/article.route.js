@@ -8,14 +8,9 @@ const articleController = require('../controllers/article.controller');
 const { newArticleValidation, updateArticleValidation } = require('../validation/article.validation');
 
 
-
 // -------------------------------------- all articles routes ----------------------
 router.post(
-	'/createArticle',
-	authorizeAdmin,
-	upload.single('cover'),
-	validationMiddleware(newArticleValidation),
-	articleController.createArticle
+	'/createArticle',authorizeAdmin,upload.single('cover'),validationMiddleware(newArticleValidation),articleController.createArticle
 );
 router.get('/getall', authenticate, articleController.getAllArticles);
 

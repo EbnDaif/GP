@@ -1,31 +1,49 @@
 const multer = require('multer');
 const { v4: uuidv4 } = require('uuid');
 const path = require('path');
+const fs = require('fs').promises;
+
 const storageEngine = multer.diskStorage({
 	destination: function (req, file, cb) {
 		let dest;
+		let foldername;
 		switch (req.baseUrl) {
 			case '/GP/v1.0/users':
 				dest = 'src/uploads/users';
+				fs.mkdir(dest, { recursive: true });
+
 				break;
-			case 'src/uploads/sounds':
+			case '/GP/v1.0/sounds':
 				dest = 'src/uploads/sounds';
+				fs.mkdir(dest, { recursive: true });
+
+
 				break;
-			case '/GP/v1.0/articles':
+			case '/GP/v1.0/article':
 				dest = 'src/uploads/articles';
+				fs.mkdir(dest, { recursive: true });
+
 				break;
 			default:
 				dest = 'uploads';
+				fs.mkdir(dest, { recursive: true });
+
 		}
 		cb(null, dest);
+
 	},
 
+	
 	filename: (req, file, cb) => {
 		// cb(null, `${Date.now()}--${uuidv4()}--${file.originalname}`);
 		const ext = path.extname(file.originalname);
 		cb(null, `${Date.now()}--${uuidv4()}${ext}`);
 	},
 });
+
+
+
+
 const checkFileType = function (file, cb, type = 'image') {
 	console.log('type', type);
 	let fileTypes = /jpeg|jpg|png|gif|svg/;

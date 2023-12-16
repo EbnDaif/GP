@@ -1,6 +1,5 @@
 const { User } = require("../models/userModel");
 const asyncHandler = require('express-async-handler');
-const { genUserId } = require("../utils/userIdGenerator");
 const jwt = require('jsonwebtoken')
 module.exports = {
     registerCtrl: asyncHandler(async (req, res) => {

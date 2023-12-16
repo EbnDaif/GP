@@ -25,3 +25,93 @@
     at Route.dispatch (C:\Users\Ebn_Daif\Desktop\GP\sef-training-Backend-full\node_modules\express\lib\router\route.js:114:3)
     at Layer.handle [as handle_request] (C:\Users\Ebn_Daif\Desktop\GP\sef-training-Backend-full\node_modules\express\lib\router\layer.js:95:5)
     at C:\Users\Ebn_Daif\Desktop\GP\sef-training-Backend-full\node_modules\express\lib\router\index.js:284:15
+[2023-12-15 07:03:44.512 PM] undefined
+[2023-12-15 07:06:23.545 PM] undefined
+[2023-12-15 07:06:56.313 PM] undefined
+[2023-12-15 07:07:31.577 PM] undefined
+[2023-12-15 07:07:54.801 PM] undefined
+[2023-12-15 07:13:33.114 PM] Error: ENOENT: no such file or directory, open 'C:\Users\E_D\GP\GP\API\uploads\1702696413111--89eb08d9-298d-45cc-b6ba-b6eb79d37960.jpg'
+[2023-12-15 07:24:39.109 PM] ValidationError: Article validation failed: publish_by: Path `publish_by` is required.
+    at Document.invalidate (C:\Users\E_D\GP\GP\API\node_modules\mongoose\lib\document.js:3174:32)
+    at C:\Users\E_D\GP\GP\API\node_modules\mongoose\lib\document.js:2967:17
+    at C:\Users\E_D\GP\GP\API\node_modules\mongoose\lib\schemaType.js:1367:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+[2023-12-15 07:38:09.860 PM] Error: ENOENT: no such file or directory, open 'C:\Users\E_D\GP\GP\API\src\uploads\articles\1702697889854--8eabbc24-a40f-4022-8e06-9a17954d894e.jpg'
+[2023-12-15 07:38:53.987 PM] Error: ENOENT: no such file or directory, open 'C:\Users\E_D\GP\GP\API\src\uploads\articles\1702697933981--4c9af7a9-bc13-440d-80b2-7a1c26bc27f0.jpg'
+[2023-12-15 07:39:46.195 PM] Error: ENOENT: no such file or directory, open 'C:\Users\E_D\GP\GP\API\src\uploads\articles\1702697986188--7e8ac8c5-4231-416f-aa38-2f865c916a7e.jpg'
+[2023-12-15 07:40:28.585 PM] Error: ENOENT: no such file or directory, open 'C:\Users\E_D\GP\GP\API\src\uploads\articles\1702698028579--0fbb3e0b-d2bf-4616-9556-adec85e42d21.jpg'
+[2023-12-15 07:47:33.734 PM] Error: ENOENT: no such file or directory, open 'C:\Users\E_D\GP\GP\API\src\uploads\articles\1702698453729--867fa0ec-c14f-47ce-92c8-decf153dc1ea.jpg'
+[2023-12-15 07:48:18.913 PM] Error: ENOENT: no such file or directory, open 'C:\Users\E_D\GP\GP\API\src\uploads\articles\1702698498907--b2076be6-bbb5-4cf1-8b23-46ee301d5228.jpg'
+[2023-12-15 07:49:49.981 PM] Error: ENOENT: no such file or directory, open 'C:\Users\E_D\GP\GP\API\src\uploads\articles\1702698589977--75e59e21-645b-46f2-adc7-ec79370b9120.jpg'
+[2023-12-15 07:51:19.752 PM] Error: ENOENT: no such file or directory, open 'C:\Users\E_D\GP\GP\API\src\uploads\articles\1702698679746--93d4e73e-b9ea-429c-9280-a9af39244d3b.jpg'
+[2023-12-15 07:57:42.654 PM] Error: ENOENT: no such file or directory, open 'C:\Users\E_D\GP\GP\API\src\uploads\articles\1702699062643--dbab74ea-3bae-4844-a2f6-ebe26137ff93.jpg'
+[2023-12-15 07:59:27.911 PM] Error: ENOENT: no such file or directory, open 'C:\Users\E_D\GP\GP\API\src\uploads\articles\1702699167903--d31b36e8-c271-425e-ba77-19085787c01d.jpg'
+[2023-12-15 08:01:31.784 PM] Error: ENOENT: no such file or directory, open 'C:\Users\E_D\GP\GP\API\src\uploads\articles\1702699291778--ee9006ae-dee5-4908-b24b-4fa66c93e83b.jpg'
+[2023-12-15 08:02:05.233 PM] Error: ENOENT: no such file or directory, open 'C:\Users\E_D\GP\GP\API\src\uploads\articles\1702699325228--eaf41165-d434-41ad-bd61-d3714409d55f.jpg'
+[2023-12-15 08:03:00.647 PM] Error: ENOENT: no such file or directory, open 'C:\Users\E_D\GP\GP\API\src\uploads\articles\1702699380639--ff6232b4-af0e-4f15-89aa-8a6edd5c92aa.jpg'
+[2023-12-15 08:03:17.795 PM] Error: ENOENT: no such file or directory, open 'C:\Users\E_D\GP\GP\API\src\uploads\articles\1702699397793--5bd68f12-6f3c-4dbd-beb5-12f30af92e8f.jpg'
+[2023-12-15 08:03:57.054 PM] Error: ENOENT: no such file or directory, open 'C:\Users\E_D\GP\GP\API\src\uploads\articles\1702699437048--48d0d32b-8399-4313-9be8-f6a371652179.jpg'
+[2023-12-15 08:06:55.463 PM] Error: ENOENT: no such file or directory, open 'C:\Users\E_D\GP\GP\API\src\uploads\articles\1702699615456--3168abce-03ee-498f-961f-9b17050655ee.jpg'
+[2023-12-15 08:07:14.255 PM] Error: ENOENT: no such file or directory, open 'C:\Users\E_D\GP\GP\API\src\uploads\articles\1702699634248--d0ef16e5-7e85-429f-a623-ae8e49dda11b.jpg'
+[2023-12-15 08:07:22.554 PM] ValidationError: Article validation failed: publish_by: Path `publish_by` is required.
+    at Document.invalidate (C:\Users\E_D\GP\GP\API\node_modules\mongoose\lib\document.js:3174:32)
+    at C:\Users\E_D\GP\GP\API\node_modules\mongoose\lib\document.js:2967:17
+    at C:\Users\E_D\GP\GP\API\node_modules\mongoose\lib\schemaType.js:1367:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+[2023-12-15 08:07:41.280 PM] ValidationError: Article validation failed: publish_by: Path `publish_by` is required.
+    at Document.invalidate (C:\Users\E_D\GP\GP\API\node_modules\mongoose\lib\document.js:3174:32)
+    at C:\Users\E_D\GP\GP\API\node_modules\mongoose\lib\document.js:2967:17
+    at C:\Users\E_D\GP\GP\API\node_modules\mongoose\lib\schemaType.js:1367:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+[2023-12-15 08:16:53.207 PM] ValidationError: Article validation failed: publish_by: Path `publish_by` is required.
+    at Document.invalidate (C:\Users\E_D\GP\GP\API\node_modules\mongoose\lib\document.js:3174:32)
+    at C:\Users\E_D\GP\GP\API\node_modules\mongoose\lib\document.js:2967:17
+    at C:\Users\E_D\GP\GP\API\node_modules\mongoose\lib\schemaType.js:1367:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+[2023-12-15 08:17:21.522 PM] ValidationError: Article validation failed: publish_by: Path `publish_by` is required.
+    at Document.invalidate (C:\Users\E_D\GP\GP\API\node_modules\mongoose\lib\document.js:3174:32)
+    at C:\Users\E_D\GP\GP\API\node_modules\mongoose\lib\document.js:2967:17
+    at C:\Users\E_D\GP\GP\API\node_modules\mongoose\lib\schemaType.js:1367:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+[2023-12-15 08:18:42.260 PM] ValidationError: Article validation failed: publish_by: Path `publish_by` is required.
+    at Document.invalidate (C:\Users\E_D\GP\GP\API\node_modules\mongoose\lib\document.js:3174:32)
+    at C:\Users\E_D\GP\GP\API\node_modules\mongoose\lib\document.js:2967:17
+    at C:\Users\E_D\GP\GP\API\node_modules\mongoose\lib\schemaType.js:1367:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+[2023-12-15 08:19:59.052 PM] ValidationError: Article validation failed: publish_by: Path `publish_by` is required.
+    at Document.invalidate (C:\Users\E_D\GP\GP\API\node_modules\mongoose\lib\document.js:3174:32)
+    at C:\Users\E_D\GP\GP\API\node_modules\mongoose\lib\document.js:2967:17
+    at C:\Users\E_D\GP\GP\API\node_modules\mongoose\lib\schemaType.js:1367:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+[2023-12-15 08:35:57.256 PM] ValidationError: Article validation failed: publish_by: Path `publish_by` is required.
+    at Document.invalidate (C:\Users\E_D\GP\GP\API\node_modules\mongoose\lib\document.js:3174:32)
+    at C:\Users\E_D\GP\GP\API\node_modules\mongoose\lib\document.js:2967:17
+    at C:\Users\E_D\GP\GP\API\node_modules\mongoose\lib\schemaType.js:1367:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+[2023-12-15 08:36:03.091 PM] MulterError: Unexpected field
+    at wrappedFileFilter (C:\Users\E_D\GP\GP\API\node_modules\multer\index.js:40:19)
+    at Multipart.<anonymous> (C:\Users\E_D\GP\GP\API\node_modules\multer\lib\make-middleware.js:107:7)
+    at Multipart.emit (node:events:514:28)
+    at HeaderParser.cb (C:\Users\E_D\GP\GP\API\node_modules\busboy\lib\types\multipart.js:358:14)
+    at HeaderParser.push (C:\Users\E_D\GP\GP\API\node_modules\busboy\lib\types\multipart.js:162:20)
+    at SBMH.ssCb [as _cb] (C:\Users\E_D\GP\GP\API\node_modules\busboy\lib\types\multipart.js:394:37)
+    at feed (C:\Users\E_D\GP\GP\API\node_modules\streamsearch\lib\sbmh.js:200:10)
+    at SBMH.push (C:\Users\E_D\GP\GP\API\node_modules\streamsearch\lib\sbmh.js:104:16)
+    at Multipart._write (C:\Users\E_D\GP\GP\API\node_modules\busboy\lib\types\multipart.js:567:19)
+    at writeOrBuffer (node:internal/streams/writable:556:12)
+[2023-12-15 08:36:33.691 PM] MulterError: Unexpected field
+    at wrappedFileFilter (C:\Users\E_D\GP\GP\API\node_modules\multer\index.js:40:19)
+    at Multipart.<anonymous> (C:\Users\E_D\GP\GP\API\node_modules\multer\lib\make-middleware.js:107:7)
+    at Multipart.emit (node:events:514:28)
+    at HeaderParser.cb (C:\Users\E_D\GP\GP\API\node_modules\busboy\lib\types\multipart.js:358:14)
+    at HeaderParser.push (C:\Users\E_D\GP\GP\API\node_modules\busboy\lib\types\multipart.js:162:20)
+    at SBMH.ssCb [as _cb] (C:\Users\E_D\GP\GP\API\node_modules\busboy\lib\types\multipart.js:394:37)
+    at feed (C:\Users\E_D\GP\GP\API\node_modules\streamsearch\lib\sbmh.js:248:10)
+    at SBMH.push (C:\Users\E_D\GP\GP\API\node_modules\streamsearch\lib\sbmh.js:104:16)
+    at Multipart._write (C:\Users\E_D\GP\GP\API\node_modules\busboy\lib\types\multipart.js:567:19)
+    at writeOrBuffer (node:internal/streams/writable:556:12)
+[2023-12-15 08:46:38.226 PM] ValidationError: Article validation failed: publish_by: Path `publish_by` is required., content: please provide the article content, category: please provide the article category, title: please provide the article category
+    at Document.invalidate (C:\Users\E_D\GP\GP\API\node_modules\mongoose\lib\document.js:3174:32)
+    at C:\Users\E_D\GP\GP\API\node_modules\mongoose\lib\document.js:2967:17
+    at C:\Users\E_D\GP\GP\API\node_modules\mongoose\lib\schemaType.js:1367:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
