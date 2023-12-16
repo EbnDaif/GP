@@ -11,26 +11,18 @@ const { newArticleValidation, updateArticleValidation } = require('../validation
 
 // -------------------------------------- all articles routes ----------------------
 router.post(
-	'/',
+	'/createArticle',
 	authorizeAdmin,
 	upload.single('cover'),
 	validationMiddleware(newArticleValidation),
 	articleController.createArticle
 );
-router.get('/', authenticate, articleController.getAllArticles);
+router.get('/getall', authenticate, articleController.getAllArticles);
 
 
-// single articles routes operations --
-router.get('/:id', authenticate, validateObjectId, articleController.getArticle);
+router.get('/get-one/:id', authenticate, validateObjectId, articleController.getArticle);
 
-router
-	.route('/:id')
-	.all(authorizeAdmin, validateObjectId)
-	.patch(
-		upload.single('cover'),
-		validationMiddleware(updateArticleValidation),
-		articleController.updateArticle
-	)
-	.delete(articleController.deleteArticle);
+	router.patch('/update-atricle/:id',authorizeAdmin,validationMiddleware(updateArticleValidation),articleController.updateArticle)
+	router.delete('/delete-article/:id',authorizeAdmin,articleController.updateArticle)
 
 module.exports = router;

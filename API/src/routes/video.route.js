@@ -9,28 +9,21 @@ const { newVideoValidation, updateVideoValidation } = require('../validation/vid
 
 
 
-// -------------------------------------- all videos routes ----------------------
+
 router.post(
-	'/',
+	'/createSound',
 	authorizeAdmin,
 	upload.single('cover'),
 	validationMiddleware(newVideoValidation),
 	videoController.createVideo
 );
-router.get('/', authenticate, videoController.getAllVideos);
+router.get('/getall', authenticate, videoController.getAllVideos);
 
 
-// single videos routes operations --
-router.get('/:id', authenticate, validateObjectId, videoController.getVideo);
+router.get('/get-one/:id', authenticate, validateObjectId, videoController.getVideo);
 
-router
-	.route('/:id')
-	.all(authorizeAdmin, validateObjectId)
-	.patch(
-		upload.single('cover'),
-		validationMiddleware(updateVideoValidation),
-		videoController.updateVideo
-	)
-	.delete(videoController.deleteVideo);
+	router.patch('/update-atricle/:id',authorizeAdmin,validationMiddleware(updateVideoValidation),videoController.updateVideo)
+	router.delete('/delete-article/:id',authorizeAdmin,videoController.deleteVideo)
+
 
 module.exports = router;

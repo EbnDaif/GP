@@ -11,26 +11,19 @@ const { newSoundsValidation, updateSoundsvalidation } = require('../validation/s
 
 // -------------------------------------- all Sounds routes ----------------------
 router.post(
-	'/',
+	'/createSound',
 	authorizeAdmin,
 	upload.single('cover'),
 	validationMiddleware(newSoundsValidation),
 	soundsController.createSounds
 );
-router.get('/', authenticate, soundsController.getAllSounds);
+router.get('/getall', authenticate, soundsController.getAllSounds);
 
 
-// single Sounds routes operations --
-router.get('/:id', authenticate, validateObjectId, soundsController.getSound);
+router.get('/get-one/:id', authenticate, validateObjectId, soundsController.getSound);
 
-router
-	.route('/:id')
-	.all(authorizeAdmin, validateObjectId)
-	.patch(
-		upload.single('cover'),
-		validationMiddleware(updateSoundsvalidation),
-		soundsController.updateSounds
-	)
-	.delete(soundsController.deleteSounds);
+	router.patch('/update-atricle/:id',authorizeAdmin,validationMiddleware(updateSoundsvalidation),soundsController.updateSounds)
+	router.delete('/delete-article/:id',authorizeAdmin,soundsController.deleteSounds)
+
 
 module.exports = router;
