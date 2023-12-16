@@ -136,3 +136,16 @@
 {"level":"http","message":"d30786ab-7bdb-4cfa-aded-be538b76b46f POST /GP/v1.0/article/createArticle 500 1182 31.158 ms","timestamp":"2023-12-15 08:46:38.242 PM"}
 {"level":"http","message":"633a0ab3-446c-432c-81ba-63d652cfcd5f POST /GP/v1.0/article/createArticle 201 343 320.524 ms","timestamp":"2023-12-15 08:50:00.209 PM"}
 {"level":"http","message":"b2084752-57a7-40d8-b982-1b6693f31aaa POST /GP/v1.0/article/createArticle 201 343 346.012 ms","timestamp":"2023-12-15 08:50:12.164 PM"}
+{"level":"http","message":"2d145579-3793-4ccd-abe1-11a841a74456 POST /GP/v1.0/auth/login 200 265 497.795 ms","timestamp":"2023-12-15 09:12:44.976 PM"}
+{"level":"http","message":"d380df55-f461-49d4-9e50-68b7a77f155a POST /GP/v1.0/videos/createvideo 500 141 14.310 ms","timestamp":"2023-12-15 09:12:52.483 PM"}
+{"level":"http","message":"e1432c1a-6b15-4c11-a4f0-b1935f799710 POST /GP/v1.0/videos/createvideo 500 141 25.304 ms","timestamp":"2023-12-15 09:14:12.050 PM"}
+{"level":"http","message":"ab8f1192-e641-4599-8254-f5c285536405 POST /GP/v1.0/videos/createvideo 500 49 25.147 ms","timestamp":"2023-12-15 09:14:33.162 PM"}
+{"level":"http","message":"41107a9c-5678-4e22-8e4e-0cf41a0d13a0 POST /GP/v1.0/videos/createvideo 500 141 35.053 ms","timestamp":"2023-12-15 09:16:03.924 PM"}
+{"level":"http","message":"f7349d7f-b114-4b4f-be1f-5f1ea54798c6 POST /GP/v1.0/videos/createvideo 400 91 9.198 ms","timestamp":"2023-12-15 09:16:14.822 PM"}
+{"level":"http","message":"fe910981-27af-408c-9d83-45b2fbf1a9fc POST /GP/v1.0/videos/createvideo 400 96 11.365 ms","timestamp":"2023-12-15 09:16:24.818 PM"}
+{"level":"http","message":"df75fa77-d4d4-4c53-80b4-d6e88144afc9 POST /GP/v1.0/videos/createvideo 400 96 11.655 ms","timestamp":"2023-12-15 09:16:36.638 PM"}
+{"level":"http","message":"1be9b2ee-4b39-4727-b803-b6a4be7ba567 POST /GP/v1.0/videos/createvideo 500 141 19.904 ms","timestamp":"2023-12-15 09:18:58.284 PM"}
+{"level":"http","message":"47b90f06-1c23-4891-a946-1481e6283a84 POST /GP/v1.0/videos/createvideo 500 396 56.805 ms","timestamp":"2023-12-15 09:19:38.534 PM"}
+{"level":"http","message":"ae560a5a-a73b-4f1e-ba23-888a8b7b078e POST /GP/v1.0/videos/createvideo 500 396 58.891 ms","timestamp":"2023-12-15 09:20:55.413 PM"}
+{"level":"http","message":"2b59467f-5c55-40a1-8e26-9920aac5b2b3 POST /GP/v1.0/videos/createvideo 500 396 15.583 ms","timestamp":"2023-12-15 09:20:56.768 PM"}
+{"level":"http","message":"6e6f18ea-d0f5-48b5-a57c-4da2074b2dcd POST /GP/v1.0/videos/createvideo 201 362 231.985 ms","timestamp":"2023-12-15 09:21:14.943 PM"}

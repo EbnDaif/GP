@@ -21,7 +21,10 @@ const videoSchema = new Schema({
     type: String,
     required: [true, "please provide the Video content"],
   },
-  publish_date: Date,
+  file: {
+    type: String,
+    required: [true, "please provide the Video content"],
+  },  publish_date: Date,
   //file: String, // image
   publish_by: {
     type: mongoose.Types.ObjectId,

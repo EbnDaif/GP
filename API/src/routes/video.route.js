@@ -13,7 +13,7 @@ const { newVideoValidation, updateVideoValidation } = require('../validation/vid
 router.post(
 	'/createvideo',
 	authorizeAdmin,
-	upload.single('cover'),
+	upload.single('file'),
 	validationMiddleware(newVideoValidation),
 	videoController.createVideo
 );
