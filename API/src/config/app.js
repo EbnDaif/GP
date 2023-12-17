@@ -15,7 +15,7 @@ app.get('/',(req,res)=>{
  throw new Error('error')
 })
 app.use("/GP/v1.0", require("../routes"))
-app.use('/GP/uploads', express.static(path.join(__dirname, '../uploads')));
+app.use('/GP/v1.0/uploads', express.static(path.join(__dirname, '../uploads')));
 app.use(notFoundUrl)
 app.use(errorHandler)
 module.exports = app;
