@@ -25,17 +25,7 @@ module.exports = {
         if (!updatedUser) return res.status(404).json({ success: false, error: "user not found." })
         res.status(200).json({ success: true, data: updatedUser });
     }),
-    updateByAdminCtrl: asyncHandler(async (req, res) => {
-        const { password, mobileNumber, userId } = req.body
-        let user = await User.findById(req.params.id);
-        if (!user) return res.status(404).json({ success: false, error: 'User not found' });
-        let existingUser = await User.findOne({ _id: { $ne: req.params.id }, $or: [{ userId }, { mobileNumber }] });
-        if (existingUser) return res.status(400).json({ success: false, error: `This ${existingUser.userId === userId ? "User ID" : "MobileNumber"} already in use ..!` })
-        if (password) {
-            const genSalt = await bcrypt.genSalt(10);
-            const hash = await bcrypt.hash(password, genSalt);
-            req.body.password = hash
-        }
+        updateByAdminCtrl: asyncHandler(async (req, res) => {
         const updatedUser = await User.findOneAndUpdate({ _id: req.params.id }, req.body, { new: true });
         res.status(200).json({ success: true, data: updatedUser });
     }),

@@ -7,8 +7,8 @@ module.exports = {
     accountStatus: Joi.string().valid('Active', 'Inactive').messages({
         'any.only': 'Account status must be either "Active" or "Inactive".'
     }),
-    role: Joi.string().valid('Admin', 'Editor', 'Instructor', 'Student').messages({
-        'any.only': 'Invalid role. Allowed values are: Admin, Editor, Instructor, Student.'
+    role: Joi.string().valid('Admin', 'User').messages({
+        'any.only': 'Invalid role. Allowed values are: Admin, User'
     }),
 }),
   updateUserProfileSchema: Joi.object({
