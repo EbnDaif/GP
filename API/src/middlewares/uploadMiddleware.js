@@ -1,42 +1,46 @@
 const multer = require('multer');
 const { v4: uuidv4 } = require('uuid');
 const path = require('path');
-const fs = require('fs');
+const fs = require ("fs").promises
 
-const  createFolderIfNotExists = (folderPath) => {
-	if (!fs.existsSync(folderPath)) {
-	  fs.mkdirSync(folderPath);
-	}
-	return
+const destinations=['Videos','atricles','sounds','users']
+async function make_folders(dest){
+			 destinations.forEach(async element => {
+		try {
+			await fs.mkdir(dest+element)
+		} catch (error) {
+			return
+		}
+				});
 	
-  };
 
-
+}
 const storageEngine = multer.diskStorage({
-
-	destination: async function (req, file, cb) {
-		let dest;
+	destination: async function (req, file, callback) {
+		let dest ="src/uploads/";
+		make_folders(dest)
 		switch (req.baseUrl) {
 			case '/GP/v1.0/users':
 				dest = 'src/uploads/users';
-				 createFolderIfNotExists(dest);
 
 				break;
 			case '/GP/v1.0/sounds':
 				dest = 'src/uploads/sounds';
-				  createFolderIfNotExists(dest);
+				fs.mkdir(dest)
 
 
 				break;
 			case '/GP/v1.0/article':
 				dest = 'src/uploads/articles';
-				 await createFolderIfNotExists(dest);
+				fs.mkdirSync(dest)
+
 
 
 				break;
 			case '/GP/v1.0/videos':
 				dest = 'src/uploads/videos';
-				 await createFolderIfNotExists(dest);
+				
+
 
 
 				break;
@@ -44,44 +48,28 @@ const storageEngine = multer.diskStorage({
 				dest = 'uploads';
 
 		}
-		cb(null, dest);
+		callback(null, dest);
 	},
 
-	filename: (req, file, cb) => {
-		// cb(null, `${Date.now()}--${uuidv4()}--${file.originalname}`);
-		const ext = path.extname(file.originalname);
-		cb(null, `${Date.now()}--${uuidv4()}${ext}`);
+	filename: (req, file, callback) => {
+		callback(null, `${Date.now()}--${uuidv4()}--${file.originalname}`);
 	},
 });
-const checkFileType = function (file, cb, type = 'image') {
-	console.log('type', type);
-	let fileTypes = /jpeg|jpg|png|gif|svg|mp4|mp3/;
-	if (type == 'file') {
-		fileTypes = /jpeg|jpg|png|gif|svg|mp4|mp3/;
-	}
+const checkFileType = function (file, callback) {
+	const fileTypes = /jpeg|jpg|png|gif|svg|mp4/;
 	const extName = fileTypes.test(path.extname(file.originalname).toLowerCase());
 	const mimeType = fileTypes.test(file.mimetype);
 	if (mimeType && extName) {
-		return cb(null, true);
+		return callback(null, true);
 	} else {
-		cb('Error: You can Only Upload an Image OR Videos OR Sounds!!');
+		callback('Error: You can Only Upload Images!!');
 	}
 };
-
 const upload = multer({
 	storage: storageEngine,
 	limits: { fileSize: 10000000 },
-	fileFilter: (req, file, cb) => {
-		checkFileType(file, cb);
+	fileFilter: (req, file, callback) => {
+		checkFileType(file, callback);
 	},
 });
-
-const uploadFile = multer({
-	storage: storageEngine,
-	limits: { fileSize: 10000000 },
-	fileFilter: (req, file, cb) => {
-		checkFileType(file, cb, 'file');
-	},
-});
-
-module.exports = { upload, uploadFile };
+module.exports = { upload };

@@ -175,3 +175,9 @@
     at C:\Users\E_D\GP\GP\API\node_modules\mongoose\lib\document.js:2967:17
     at C:\Users\E_D\GP\GP\API\node_modules\mongoose\lib\schemaType.js:1367:9
     at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+[2023-12-19 03:28:07.743 AM] Error: ENOENT: no such file or directory, open 'C:\Users\E_D\Desktop\New folder\GP\API\src\uploads\videos\1702985287739--c382b381-106b-4382-bae6-da1ad4a80fd6--5-Minute Meditation You Can Do Anywhere.mp4'
+[2023-12-19 04:25:12.368 AM] Error: ENOENT: no such file or directory, open 'C:\Users\E_D\Desktop\New folder\GP\API\src\uploads\videos\1702988712365--122c36b6-48fd-42c2-9ff1-b97d7b931893--5-Minute Meditation You Can Do Anywhere.mp4'
+[2023-12-19 04:26:02.863 AM] Error: ENOENT: no such file or directory, open 'C:\Users\E_D\Desktop\New folder\GP\API\src\uploads\videos\1702988762859--c1b2419a-f994-4f41-a1ad-b71c62b23680--5-Minute Meditation You Can Do Anywhere.mp4'
+[2023-12-19 04:27:05.374 AM] Error: ENOENT: no such file or directory, open 'C:\Users\E_D\Desktop\New folder\GP\API\src\uploads\videos\1702988825371--17174bb0-95aa-42ef-805d-79b8ef717178--5-Minute Meditation You Can Do Anywhere.mp4'
+[2023-12-19 04:35:40.831 AM] Error: ENOENT: no such file or directory, open 'C:\Users\E_D\Desktop\New folder\GP\API\src\uploads\videos\1702989340825--8f2af2cb-3240-4b59-9eca-5c4141a476c3--5-Minute Meditation You Can Do Anywhere.mp4'
+[2023-12-19 04:37:13.157 AM] Error: ENOENT: no such file or directory, open 'C:\Users\E_D\Desktop\New folder\GP\API\src\uploads\videos\1702989433153--ae7b6a33-d182-44d6-8044-54ad36518b2a--5-Minute Meditation You Can Do Anywhere.mp4'
