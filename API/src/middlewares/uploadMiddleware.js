@@ -3,7 +3,7 @@ const { v4: uuidv4 } = require('uuid');
 const path = require('path');
 const fs = require ("fs").promises
 
-const destinations=['Videos','atricles','sounds','users']
+const destinations=['videos','atricles','sounds','users']
 async function make_folders(dest){
 			 destinations.forEach(async element => {
 		try {
