@@ -18,7 +18,7 @@ async function make_folders(dest){
 const storageEngine = multer.diskStorage({
 	destination: async function (req, file, callback) {
 		let dest ="src/uploads/";
-		make_folders(dest)
+		await make_folders(dest)
 		switch (req.baseUrl) {
 			case '/GP/v1.0/users':
 				dest = 'src/uploads/users';
