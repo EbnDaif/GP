@@ -7,6 +7,7 @@ module.exports = {
       "any.required": "First name is required.",
       "string.empty": "First name must not be empty.",
     }),
+    
     lastName: Joi.string().required().messages({
       "any.required": "Last name is required.",
       "string.empty": "Last name must not be empty.",

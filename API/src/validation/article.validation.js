@@ -1,5 +1,4 @@
 const Joi = require('joi');
-const { enum_ArticlesCategory } = require('../config/enums');
 
 const newArticleValidation = Joi.object({
 	title: Joi.string().required().min(3).max(100).messages({
@@ -7,6 +6,10 @@ const newArticleValidation = Joi.object({
 		'any.min': 'Article name must be between 3 and 100 characters',
 		'any.max': 'Article name must be between 3 and 100 characters',
 	}),
+	tags:  Joi.string().required().trim().messages({
+		"any.required": "Please provide a status for this Video",
+	  }),
+	
 
 	category: Joi.string()
 		.valid(...enum_ArticlesCategory)
@@ -14,7 +17,6 @@ const newArticleValidation = Joi.object({
 		.trim()
 		.messages({
 			'any.required': 'Please provide a status for this Article',
-			'any.only': `Must be one of the following values: ${enum_ArticlesCategory}`,
 		}),
 
 	content: Joi.string().required().messages({
@@ -39,6 +41,8 @@ const updateArticleValidation = Joi.object({
 		'any.min': 'Article name must be between 3 and 100 characters',
 		'any.max': 'Article name must be between 3 and 100 characters',
 	}),
+	tags:  Joi.string().trim(),
+	
 
 	category: Joi.string()
 		.valid(...enum_ArticlesCategory)

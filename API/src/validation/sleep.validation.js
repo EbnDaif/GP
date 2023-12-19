@@ -5,6 +5,10 @@ const newSoundsValidation = Joi.object({
     "any.min": "Video name must be between 3 and 100 characters",
     "any.max": "Video name must be between 3 and 100 characters",
   }),
+  tags:  Joi.string().required().trim().messages({
+    "any.required": "Please provide a status for this Video",
+  }),
+
 
   category: Joi.string().required().trim().messages({
     "any.required": "Please provide a status for this Video",
@@ -31,6 +35,8 @@ const updateSoundsvalidation = Joi.object({
     "any.min": "Video name must be between 3 and 100 characters",
     "any.max": "Video name must be between 3 and 100 characters",
   }),
+  tags:  Joi.string().trim(),
+
 
   category: Joi.string().trim().messages({
     "any.required": "Please provide a category for this Video",

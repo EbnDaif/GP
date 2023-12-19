@@ -38,6 +38,7 @@ const updateVideoValidation = Joi.object({
   category: Joi.string().trim().messages({
     "any.required": "Please provide a category for this Video",
   }),
+  tags:  Joi.string().required().trim(),
 
   content: Joi.string(),
 
