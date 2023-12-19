@@ -26,13 +26,11 @@ const storageEngine = multer.diskStorage({
 				break;
 			case '/GP/v1.0/sounds':
 				dest = 'src/uploads/sounds';
-				fs.mkdir(dest)
 
 
 				break;
 			case '/GP/v1.0/article':
 				dest = 'src/uploads/articles';
-				fs.mkdirSync(dest)
 
 
 
