@@ -12,10 +12,11 @@ const { newArticleValidation, updateArticleValidation } = require('../validation
 router.post(
 	'/createArticle',authorizeAdmin,upload.single('cover'),validationMiddleware(newArticleValidation),articleController.createArticle
 );
-router.get('/getall', authenticate, articleController.getAllArticles);
+//router.get('/getall', authenticate, articleController.getAllArticles);
+router.get('/getall', articleController.getAllArticles);
 
 
-router.get('/get-one/:id', authenticate, validateObjectId, articleController.getArticle);
+router.get('/get-one/:id', validateObjectId, articleController.getArticle);
 
 	router.patch('/update-atricle/:id',authorizeAdmin,validationMiddleware(updateArticleValidation),articleController.updateArticle)
 	router.delete('/delete-article/:id',authorizeAdmin,articleController.updateArticle)

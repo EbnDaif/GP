@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const { upload } = require('../middlewares/uploadMiddleware');
 const { validationMiddleware } = require('../middlewares/validationMiddleware');
-const { authorizeAdmin, authenticate } = require('../middlewares/authenticateMiddleware');
+const { authorizeAdmin } = require('../middlewares/authenticateMiddleware');
 const validateObjectId = require('../middlewares/validateObjectIdMiddleware');
 const soundsController = require('../controllers/sleeping_sounds.controller');
 const { newSoundsValidation, updateSoundsvalidation } = require('../validation/sleep.validation');
@@ -17,10 +17,10 @@ router.post(
 	validationMiddleware(newSoundsValidation),
 	soundsController.createSounds
 );
-router.get('/getall', authenticate, soundsController.getAllSounds);
+router.get('/getall', soundsController.getAllSounds);
 
 
-router.get('/get-one/:id', authenticate, validateObjectId, soundsController.getSound);
+router.get('/get-one/:id', validateObjectId, soundsController.getSound);
 
 	router.patch('/update-atricle/:id',authorizeAdmin,validationMiddleware(updateSoundsvalidation),soundsController.updateSounds)
 	router.delete('/delete-article/:id',authorizeAdmin,soundsController.deleteSounds)
