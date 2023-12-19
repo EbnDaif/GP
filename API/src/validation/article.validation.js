@@ -45,7 +45,6 @@ const updateArticleValidation = Joi.object({
 	
 
 	category: Joi.string()
-		.valid(...enum_ArticlesCategory)
 		.trim()
 		.messages({
 			'any.required': 'Please provide a category for this Article',
