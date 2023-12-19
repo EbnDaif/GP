@@ -9,6 +9,9 @@ const newVideoValidation = Joi.object({
   category: Joi.string().required().trim().messages({
     "any.required": "Please provide a status for this Video",
   }),
+  tags:  Joi.string().required().trim().messages({
+    "any.required": "Please provide a status for this Video",
+  }),
 
   content: Joi.string().required().messages({
     "any.required": "Please provide a content for this Video",

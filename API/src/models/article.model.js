@@ -1,6 +1,5 @@
 const mongoose = require('mongoose');
 const { Schema } = mongoose;
-const { enum_ArticlesCategory } = require('../config/enums');
 const { deleteUploadedFile } = require('../utils/deleteUploadedFile');
 
 const articleSchema = new Schema({
@@ -11,16 +10,22 @@ const articleSchema = new Schema({
 	},
 	category: {
 		type: String,
-		enum: enum_ArticlesCategory,
 		required: [true, 'please provide the article category'],
 		trim: true,
 	},
+
 	content: {
 		type: String,
 		required: [true, 'please provide the article content'],
 	},
 	URL: {type: String},
 
+	tags :[{
+		 type : String,
+		required: [true, 'please provide the article category'],
+		trim: true,
+	}],
+	
 
 	publish_date: Date,
 	cover: String, // image

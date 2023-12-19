@@ -13,6 +13,13 @@ const soundsSchema = new Schema({
     required: [true, "please provide the Sounds category"],
     trim: true,
   },
+  tags :[{
+    type : String,
+   required: [true, 'please provide the article category'],
+   trim: true,
+ }],
+ 
+
   description: {
     type: String,
     required: [true, "please provide the Sounds category"]
