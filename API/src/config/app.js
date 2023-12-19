@@ -3,6 +3,7 @@ const app = express();
 const cookieParser = require('cookie-parser');
 const notFoundUrl=require("../routes/notFoundRoutes")
 const path = require('path');
+
 const { httpLogger } = require('../services/httpLoggerService');
 const { errorHandler } = require('../middlewares/errorHandlerMiddleware');
 app.use(express.json());

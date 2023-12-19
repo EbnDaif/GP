@@ -1,20 +1,16 @@
 const multer = require('multer');
 const { v4: uuidv4 } = require('uuid');
 const path = require('path');
-const fs = require ("fs").promises
+const fs = require ("fs")
 
 const destinations=['videos','atricles','sounds','users']
-async function make_folders(dest){
-			 destinations.forEach(async element => {
-		try {
-			await fs.mkdir(dest+element)
-		} catch (error) {
-			return
-		}
-				});
-	
-
-}
+ function make_folders(dest){
+	if (!fs.existsSync(dest)) {
+		fs.mkdirSync(dest);
+		console.log(`Folder created at: ${dest}`);
+	  } else {
+		console.log(`Folder already exists at: ${dest}`);
+	  }}
 const storageEngine = multer.diskStorage({
 	destination: async function (req, file, callback) {
 		let dest ="src/uploads/";
@@ -22,22 +18,25 @@ const storageEngine = multer.diskStorage({
 		switch (req.baseUrl) {
 			case '/GP/v1.0/users':
 				dest = 'src/uploads/users';
-
+				await make_folders(dest)
 				break;
 			case '/GP/v1.0/sounds':
 				dest = 'src/uploads/sounds';
+				await make_folders(dest)
 
 
 				break;
 			case '/GP/v1.0/article':
 				dest = 'src/uploads/articles';
+				await make_folders(dest)
 
 
 
 				break;
 			case '/GP/v1.0/videos':
 				dest = 'src/uploads/videos';
-				
+				await make_folders(dest)
+
 
 
 
@@ -50,7 +49,8 @@ const storageEngine = multer.diskStorage({
 	},
 
 	filename: (req, file, callback) => {
-		callback(null, `${Date.now()}--${uuidv4()}--${file.originalname}`);
+		 let name=file.originalname.replace(" ","_")
+		callback(null, `${Date.now()}--${uuidv4()}--${name}`);
 	},
 });
 const checkFileType = function (file, callback) {
