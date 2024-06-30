@@ -1,0 +1,41 @@
+Frequently Asked Questions:
+
+1. Question: What can this website do?
+
+Answer: This website provides an AI-powered chatbot for mental health support. It can screen and diagnose patients with mental health problems and provide immediate help.
+
+2. Question: How do I use this website?
+
+Answer: You can interact with the chatbot by typing your questions or concerns in the chat interface. The chatbot will respond and guide you through the process.
+
+3. Question: What kind of templates does this website offer?
+
+Answer: This website offers pre-built templates that you can use to create your counseling chatbot in minutes.
+
+4. Question: Can the chatbot learn from conversations?
+
+Answer: Yes, each chatbot or “replika” is unique to the user, as the AI learns from their conversations.
+
+5. Question: How can I get support if I have issues with the website?
+
+Answer: Most websites have a support section where you can find answers to frequently asked questions or contact information for technical support
+
+6. Question: Is there a user guide or manual for this website?
+
+Answer: While specific details may vary, most websites provide a user guide or FAQ section to help users navigate and utilize the site’s features.
+
+7. Question: How are you?
+
+Answer: I’m an AI, so I don’t have feelings, but I’m here and ready to help you.
+
+8. Question: What is your name?
+
+Answer: I’m a therapy chatbot designed to assist you.
+
+9. Question: How do you see the problem?
+
+Answer: As an AI, I don’t form opinions. However, I can help you explore different perspectives on your situation.
+
+10. Question: How would you define the biggest challenge you’re facing right now?
+
+Answer: I’m here to help you identify your challenges. Can you tell me more about what you’re experiencing?

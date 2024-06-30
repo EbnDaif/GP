@@ -2,7 +2,7 @@
 import React, { useEffect } from 'react'
 import './App.css'
 
-function App() {
+function FaceSignIn() {
   let faceioInstance = null
 
   useEffect(() => {
@@ -163,7 +163,6 @@ function sendErrorDataToFlutter(data) {
   return (
     <div className="face-authentication-by-trungquandev flex fdc jcfc aic">
       <h1>Face Authentication using ReactJS & FaceIO</h1>
-      <button className="action face-registration" onClick={faceRegistration}>Face Registration</button>
       <button className="action face-sign-in" onClick={faceSignIn}>Face Sign In</button>
   
      
@@ -171,4 +170,4 @@ function sendErrorDataToFlutter(data) {
   )
 }
 
-export default App
+export default FaceSignIn
