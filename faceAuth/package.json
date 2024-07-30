@@ -1,43 +1,19 @@
 {
-  "name": "my-react-app",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "name": "online-code-compiler",
+  "version": "1.0.0",
+  "main": "index.js",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
   "dependencies": {
-    "@emotion/react": "^11.11.3",
-    "@emotion/styled": "^11.11.0",
-    "@fortawesome/fontawesome-free": "^6.5.2",
-    "@mui/icons-material": "^5.15.11",
-    "@mui/material": "^5.15.11",
-    "bootstrap": "^5.3.3",
-    "flowise-embed": "^1.0.20",
-    "flowise-embed-react": "^1.0.2",
-    "formik": "^2.4.5",
-    "framer-motion": "^11.1.7",
-    "mdb-react-ui-kit": "^8.0.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-icons": "^5.0.1",
-    "react-router-dom": "^6.22.1",
-    "react-social-login-buttons": "^4.1.0",
-    "reactjs-social-login": "^2.6.3",
-    "styled-components": "^6.1.8",
-    "yup": "^0.28.5"
-  },
-  "devDependencies": {
-    "@types/react": "^18.2.56",
-    "@types/react-dom": "^18.2.19",
-    "@vitejs/plugin-react": "^4.2.1",
-    "eslint": "^8.56.0",
-    "eslint-plugin-react": "^7.33.2",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.4.5",
-    "vite": "^5.1.4"
+    "body-parser": "^1.20.2",
+    "dockerode": "^4.0.2",
+    "express": "^4.19.2",
+    "mongoose": "^8.5.1",
+    "ws": "^8.18.0"
   }
 }
